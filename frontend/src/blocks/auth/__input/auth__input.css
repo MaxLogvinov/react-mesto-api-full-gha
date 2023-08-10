@@ -1,0 +1,16 @@
+.auth__input {
+  padding: 0;
+  color: #ccc;
+  font-size: 14px;
+  background: #000000;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  width: 358px;
+  height: 26px;
+}
+
+@media (max-width: 767px) {
+  .auth__input {
+    max-width: 260px;
+  }
+}

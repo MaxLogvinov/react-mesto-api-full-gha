@@ -1,0 +1,12 @@
+.profile__container {
+  display: flex;
+  flex-direction: row;
+  padding: 23px 0px 0px 29px;
+  gap: 19px;
+}
+
+@media (max-width: 900px) {
+  .profile__container {
+    padding: 23px 0px 32px 35px;
+  }
+}

@@ -1,0 +1,5 @@
+@media (max-width: 767px) {
+  .header__menu-item_disabled {
+    padding-right: 0px;
+  }
+}

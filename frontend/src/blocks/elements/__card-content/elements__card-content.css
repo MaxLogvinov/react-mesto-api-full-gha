@@ -1,0 +1,8 @@
+.elements__card-content {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0 25px 0;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+}

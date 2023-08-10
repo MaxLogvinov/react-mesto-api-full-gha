@@ -1,0 +1,7 @@
+@media (max-width: 767px) {
+  .popup__title_type_delete {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 23px 0 19px 19px;
+  }
+}

@@ -1,0 +1,16 @@
+.not-found {
+  color: bisque;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.not-found__button {
+  color: black;
+  text-decoration: none;
+  width: 150px;
+  height: 30px;
+  background-color: aliceblue;
+  text-align: center;
+  font-size: 20px;
+}

@@ -1,0 +1,14 @@
+.header__menu-close {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../../images/CloseIconMobile.svg);
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  transition: opacity 0.3s linear;
+  margin-right: 16px;
+}
+
+.header__menu-close:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
