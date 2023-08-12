@@ -14,6 +14,7 @@ const helmet = require('helmet');
 const cors = require('cors');
 const { errorHandler } = require('./middlewares/errorHandler');
 const router = require('./routes/index');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 mongoose
   .connect(DB_URL, {
@@ -35,7 +36,9 @@ app.use(cors({ origin: CORS_URL, credentials: true }));
 
 app.use(helmet());
 
+app.use(requestLogger);
 app.use(router);
+app.use(errorLogger);
 
 app.use(errors());
 
