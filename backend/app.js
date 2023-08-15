@@ -36,7 +36,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'https://api.maxmesto.nomoreparties.co'],
+    origin: ['http://localhost:3000', 'https://maxmesto.nomoreparties.co'],
     credentials: true,
   })
 );
