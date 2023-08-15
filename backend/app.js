@@ -4,11 +4,8 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 
-const {
-  PORT = 4000,
-  DB_URL = 'mongodb://127.0.0.1:27017/mestodb',
-  // CORS_URL = 'https://api.maxmesto.nomoreparties.co/',
-} = process.env;
+const { PORT = 4000, DB_URL = 'mongodb://127.0.0.1:27017/mestodb' } =
+  process.env;
 const cookieParser = require('cookie-parser');
 const { errors } = require('celebrate');
 const helmet = require('helmet');
