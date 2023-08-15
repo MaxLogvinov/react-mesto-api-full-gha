@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const {
   PORT = 4000,
   DB_URL = 'mongodb://127.0.0.1:27017/mestodb',
-  CORS_URL = 'https://api.maxmesto.nomoreparties.co/',
+  // CORS_URL = 'https://api.maxmesto.nomoreparties.co/',
 } = process.env;
 const cookieParser = require('cookie-parser');
 const { errors } = require('celebrate');
@@ -34,7 +34,12 @@ const app = express();
 app.use(cookieParser());
 app.use(express.json());
 
-app.use(cors({ origin: CORS_URL, credentials: true }));
+app.use(
+  cors({
+    origin: ['http://localhost:3000', 'https://api.maxmesto.nomoreparties.co'],
+    credentials: true,
+  })
+);
 
 app.use(helmet());
 
