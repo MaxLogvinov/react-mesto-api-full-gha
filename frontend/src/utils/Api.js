@@ -1,6 +1,5 @@
 // const { REACT_API_URL = 'http://localhost:4000/' } = process.env;
-const { REACT_API_URL = 'https://api.maxmesto.nomoreparties.co/' } =
-  process.env;
+const REACT_API_URL = 'https://api.maxmesto.nomoreparties.co/';
 class Api {
   constructor({ url, headers }) {
     this._url = url;
