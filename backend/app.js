@@ -1,4 +1,6 @@
 /* eslint-disable no-console */
+// eslint-disable-next-line
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 
