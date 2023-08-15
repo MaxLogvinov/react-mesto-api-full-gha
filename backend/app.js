@@ -52,7 +52,7 @@ app.use(errorLogger);
 app.use(errors());
 
 app.use(errorHandler);
-
+// eslint-disable-next-line
 app.listen(PORT, () => {
   // eslint-disable-next-line
   console.log('Сервер успешно запущен');
