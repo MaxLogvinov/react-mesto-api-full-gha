@@ -1,4 +1,5 @@
-const { REACT_API_URL = 'http://localhost:4000/' } = process.env;
+// const { REACT_API_URL = 'http://localhost:4000/' } = process.env;
+const { REACT_API_URL = 'http://api.maxmesto.nomoreparties.co/' } = process.env;
 
 class Auth {
   constructor(url) {

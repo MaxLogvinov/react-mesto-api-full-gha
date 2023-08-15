@@ -1,5 +1,5 @@
 {
-  "name": "react-mesto-auth",
+  "name": "react-mesto-api-full-gha",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,10 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && scp -r ./build/* maxl@84.252.129.127:/home/maxl/frontend"
   },
-  "homepage": "https://maxlogvinov.github.io/react-mesto-auth/",
   "eslintConfig": {
     "extends": [
       "react-app",
