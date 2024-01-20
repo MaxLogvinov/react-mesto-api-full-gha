@@ -33,7 +33,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'https://maxmesto.nomoreparties.co'],
+    origin: ['https://maxmesto.nomoreparties.co', 'http://localhost:3000'],
     credentials: true,
   })
 );
@@ -53,6 +53,5 @@ app.use(errors());
 
 app.use(errorHandler);
 app.listen(PORT, () => {
-  // eslint-disable-next-line
   console.log('Сервер успешно запущен');
 });
